@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `o-xian blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Onoyama Shodai`,
+      summary: `Kyutech B3 Space System`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `o-xian's blog site.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `oshanQQ`,
     },
   },
   plugins: [
@@ -112,12 +112,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `o-xian blog`,
+        short_name: `o-xian blog`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#FFFFFF`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
