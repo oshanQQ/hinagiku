@@ -76,5 +76,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        rejected: true,
+        printRejected: false,
+        printAll: false,
+        develop: false,
+        tailwind: true,
+        whitelist: ["selector"],
+        ignore: ["/ignored.css", "prismjs/", "docsearch.js/"],
+      },
+    },
   ],
 }
