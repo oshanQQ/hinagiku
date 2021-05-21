@@ -24,7 +24,7 @@ class BlogIndex extends React.Component {
                     <Twemoji svg text={node.frontmatter.emoji || "💻"} />
                   </div>
                   <header className="pl-4">
-                    <h3 className=" text-2xl md:text-4xl font-semibold mt-6 mb-6">
+                    <h3 className="text-2xl md:text-4xl font-semibold mt-6 mb-6">
                       <Link
                         className="text-gray-800 shadow-none"
                         to={node.fields.slug}
