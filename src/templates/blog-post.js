@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
             <div className="pt-16 flex justify-center text-6xl">
               <Twemoji svg text={post.frontmatter.emoji || "💻"} />
             </div>
-            <h1 className="text-5xl font-semibold my-8 text-center">
+            <h1 className="text-4xl font-semibold my-8 text-center">
               {post.frontmatter.title}
             </h1>
             <p className="text-sm font-semibold mb-8 text-center">
