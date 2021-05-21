@@ -19,7 +19,7 @@ class BlogIndex extends React.Component {
           return (
             <article key={node.fields.slug}>
               <div className="p-1 md:p-4">
-                <div className="flex items-center border-2 border-gray-200 bg-gray-200 rounded-lg pt-2 pb-4 px-4">
+                <div className="flex items-center border-2 border-gray-200 bg-gray-200 rounded-lg p-4">
                   <div className="p-4 justify-center text-4xl md:text-6xl rounded-xl bg-gray-100">
                     <Twemoji svg text={node.frontmatter.emoji || "💻"} />
                   </div>
