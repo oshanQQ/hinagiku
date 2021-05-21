@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `o-xian blog`,
     author: `Onoyama Shodai`,
-    description: `ゆるゆるブログ`,
+    description: `o-xianのぶろぐ`,
     siteUrl: `https://gatsby-starter-blog-tailwindcss-demo.netlify.com/`,
     social: {
       twitter: `oshanQQ`,
