@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { Twemoji } from "react-emoji-render"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,10 +19,13 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <h1 className="text-5xl font-semibold mt-8 mb-4">
+            <div className="pt-16 flex justify-center text-6xl">
+              <Twemoji svg text={post.frontmatter.emoji || "💻"} />
+            </div>
+            <h1 className="text-4xl font-semibold my-8 text-center">
               {post.frontmatter.title}
             </h1>
-            <p className="text-sm font-semibold mb-8">
+            <p className="text-sm font-semibold mb-8 text-center">
               {post.frontmatter.date}
             </p>
           </header>
@@ -89,6 +93,7 @@ export const pageQuery = graphql`
         title
         date
         description
+        emoji
       }
     }
   }

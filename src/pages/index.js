@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { Twemoji } from "react-emoji-render"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,10 +18,13 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
-              <div className="p-4">
-                <div className="border-2 border-gray-200 bg-gray-200 rounded-lg pt-2 pb-4 px-4">
-                  <header>
-                    <h3 className="text-4xl font-semibold mt-6 mb-6">
+              <div className="p-1 md:p-4">
+                <div className="flex items-center border-2 border-gray-200 bg-gray-200 rounded-lg p-4">
+                  <div className="p-4 justify-center text-4xl md:text-6xl rounded-xl bg-gray-100">
+                    <Twemoji svg text={node.frontmatter.emoji || "💻"} />
+                  </div>
+                  <header className="pl-4">
+                    <h3 className="text-2xl md:text-4xl font-semibold mt-6 mb-6">
                       <Link
                         className="text-gray-800 shadow-none"
                         to={node.fields.slug}
@@ -68,6 +72,7 @@ export const pageQuery = graphql`
             date
             title
             description
+            emoji
           }
         }
       }
