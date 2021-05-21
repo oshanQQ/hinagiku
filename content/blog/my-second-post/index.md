@@ -1,6 +1,7 @@
 ---
 title: My Second Post!
 date: "2015/05/06"
+emoji: "2️⃣"
 ---
 
 Wow! I love blogging so much already.
