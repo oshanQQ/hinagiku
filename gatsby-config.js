@@ -62,7 +62,7 @@ module.exports = {
         short_name: `o-xian blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#EDF2F7`,
         display: `standalone`,
         icon: `content/assets/gatsby-icon.png`,
       },
