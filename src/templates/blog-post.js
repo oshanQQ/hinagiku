@@ -33,7 +33,6 @@ class BlogPostTemplate extends React.Component {
             className="markdown"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <hr className="h-px mb-8" />
         </article>
 
         <nav>
