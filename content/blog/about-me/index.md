@@ -12,7 +12,7 @@ I'm a student at Kyushu institute of Technology.
 
 # Works
 
-- [o-xoan blog](https://o-xian-blog.vercel.app/)
+- [o-xian blog](https://o-xian-blog.vercel.app/)
 - [o-xian portfolio](https://o-xian-portfolio.vercel.app/)
 
 # Links
