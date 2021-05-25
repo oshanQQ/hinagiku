@@ -5,9 +5,18 @@ description: "o-xianのaboutページ"
 emoji: "👋"
 ---
 
-# Onoyama Shodai
+# About me
 
-I am a student at Kyushu Institute of Technology.  
-I use the handle "o-xian".  
-I am mainly working on the front-end area.  
-Nice to meet you!
+My name is Onoyama Shodai. My handle is "o-xian".
+I'm a student at Kyushu institute of Technology.
+
+# Works
+
+- [o-xoan blog](https://o-xian-blog.vercel.app/)
+- [o-xian portfolio](https://o-xian-portfolio.vercel.app/)
+
+# Links
+
+- [Twitter](https://twitter.com/oshanQQ)
+- [GitHub](https://github.com/oshanQQ)
+- [SpeakerDeck](https://speakerdeck.com/oshanqq)
