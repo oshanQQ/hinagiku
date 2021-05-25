@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component {
 
         <nav>
           <ul
-            className="flex flex-wrap justify-between mb-8"
+            className="flex flex-wrap justify-between py-8"
             // style={{
             //   display: `flex`,
             //   flexWrap: `wrap`,
