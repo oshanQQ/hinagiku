@@ -17,7 +17,7 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3 className="text-2xl font-semibold mt-0 font-body">
+        <h3 className="sticky text-2xl font-semibold mt-0 font-body">
           <Link className="shadow-none" to={`/`}>
             {title}
           </Link>
@@ -28,11 +28,10 @@ class Layout extends React.Component {
       <div className="max-w-4xl mx-auto px-8 py-8 font-body">
         <header>{header}</header>
         <main>{children}</main>
-        <footer className="text-center">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a className="text-gray-800" href="https://www.gatsbyjs.org">
-            Gatsby
+        <footer className="text-center py-6">
+          ©{new Date().getFullYear()},{` `}
+          <a className="text-gray-800" href="https://twitter.com/oshanQQ">
+            oshanQQ
           </a>
         </footer>
       </div>
