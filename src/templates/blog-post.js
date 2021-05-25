@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <div className="pt-16 flex justify-center text-6xl">
+            <div className="pt-16 flex flex-no-shurink justify-center text-6xl">
               <Twemoji svg text={post.frontmatter.emoji || "💻"} />
             </div>
             <h1 className="text-4xl font-semibold my-8 text-center">
