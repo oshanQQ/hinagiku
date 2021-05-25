@@ -62,7 +62,7 @@ module.exports = {
         short_name: `o-xian blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#EDF2F7`,
+        theme_color: `#FD9FBA`,
         display: `standalone`,
         icon: `content/assets/icon.png`,
         icon_options: {
