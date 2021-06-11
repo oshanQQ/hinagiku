@@ -25,15 +25,17 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div className="max-w-4xl mx-auto px-8 py-8 font-body">
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer className="text-center py-6">
-          ©{new Date().getFullYear()},{` `}
-          <a className="text-gray-800" href="https://twitter.com/oshanQQ">
-            oshanQQ
-          </a>
-        </footer>
+      <div className="font-body bg-gray-200">
+        <div className="max-w-4xl mx-auto px-8 py-8 ">
+          <header>{header}</header>
+          <main>{children}</main>
+          <footer className="text-center py-6">
+            ©{new Date().getFullYear()},{` `}
+            <a className="text-gray-800" href="https://twitter.com/oshanQQ">
+              oshanQQ
+            </a>
+          </footer>
+        </div>
       </div>
     )
   }

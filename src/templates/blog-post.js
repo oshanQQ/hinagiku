@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article className="bg-white rounded-lg p-8 my-8">
           <header>
             <div className="pt-16 flex flex-no-shurink justify-center text-6xl">
               <Twemoji svg text={post.frontmatter.emoji || "💻"} />
