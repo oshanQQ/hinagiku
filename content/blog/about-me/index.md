@@ -13,10 +13,10 @@ I'm a student at Kyushu institute of Technology.
 # Works
 
 - [o-xian blog](https://o-xian-blog.vercel.app/)
-- [o-xian portfolio](https://o-xian-portfolio.vercel.app/)
 
 # Links
 
 - [Twitter](https://twitter.com/oshanQQ)
 - [GitHub](https://github.com/oshanQQ)
+- [Zenn](https://zenn.dev/oshanqq)
 - [SpeakerDeck](https://speakerdeck.com/oshanqq)
