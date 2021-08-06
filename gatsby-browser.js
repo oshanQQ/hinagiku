@@ -13,7 +13,6 @@ import "tailwindcss/utilities.css"
 // Markdown formatting, uses Tailwind @apply primitive to apply Tailwind's utility classes to
 // elements created by the Markdown parser
 import "./src/markdown.css"
-import "./src/numo.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
