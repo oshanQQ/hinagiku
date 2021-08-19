@@ -10,4 +10,5 @@ const Footer: NextComponentType = () => {
     </>
   );
 };
+
 export default Footer;

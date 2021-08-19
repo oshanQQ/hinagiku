@@ -10,4 +10,5 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Layout>
   );
 }
+
 export default MyApp;
