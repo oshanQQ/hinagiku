@@ -4,8 +4,9 @@ import Link from "next/link";
 const Header: NextComponentType = () => {
   return (
     <>
-      <div>o-xian bolg</div>
+      <div className="pb-12 text-4xl">
         <Link href="/">o-xian blog</Link>
+      </div>
     </>
   );
 };
