@@ -19,6 +19,7 @@ const Home: NextPage<IProps> = ({ posts }) => {
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
+
   let posts = files.map((file) => {
     const data = fs.readFileSync(`posts/${file}`).toString();
 
@@ -28,6 +29,7 @@ export async function getStaticProps() {
     };
   });
 
+  console.log(posts);
   return {
     props: {
       posts: posts,
