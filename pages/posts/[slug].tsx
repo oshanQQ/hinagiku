@@ -3,6 +3,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import { PostInfo } from "../../interfaces/interfaces";
 
+import Markdown from "../../components/Markdown";
+
 interface IProps {
   post: PostInfo;
 }
@@ -10,7 +12,9 @@ interface IProps {
 const Post: NextPage<IProps> = ({ post }) => {
   return (
     <>
-      <div>{post.meta.title}</div>
+      <div className="mb-6 text-2xl font-bold text-center">
+        {post.meta.title}
+      </div>
       <Markdown content={post.content} />
     </>
   );
