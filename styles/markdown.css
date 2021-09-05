@@ -46,32 +46,32 @@
 
 /* Paragraph */
 .markdown p {
-  @apply leading-6 text-justify text-base;
+  @apply leading-6 text-justify text-base my-8 mx-4;
 }
 
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply m-4 ml-8;
+  @apply m-4 ml-8 text-base;
 }
 .markdown li > p,
 .markdown li > ul,
 .markdown li > ol {
-  @apply mb-1;
+  @apply mb-2 text-base;
 }
 .markdown ol {
-  @apply list-decimal;
+  @apply list-decimal text-base;
 }
 .markdown ul {
-  @apply list-disc;
+  @apply list-disc text-base;
 }
 
 /* Blockquotes */
 .markdown blockquote {
-  @apply p-2 mx-2 my-2 bg-gray-100 mb-4 border-l-4 border-gray-300  rounded-r-lg;
+  @apply p-2 mx-2 my-2 bg-gray-100 border-l-4 border-gray-300 rounded-r-lg;
 }
 .markdown blockquote > p {
-  @apply mb-0;
+  @apply m-1;
 }
 
 /* Images */
@@ -81,7 +81,7 @@
 
 /* Code */
 .markdown :not(pre) > code {
-  @apply bg-indigo-50 p-1 text-gray-600 rounded-md;
+  @apply bg-indigo-50 px-1 text-gray-600 rounded-md;
 }
 
 /* Pre */

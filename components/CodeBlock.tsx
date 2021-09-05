@@ -10,9 +10,11 @@ const CodeBlock: CodeComponent = ({ node, inline, className, children }) => {
   const match = /language-(\w+)/.exec(className || "");
   const lang = match && match[1] ? match[1] : "";
   return (
-    <SyntaxHighlighter style={dracula} language={lang}>
-      {String(children).replace(/\n$/, "")}
-    </SyntaxHighlighter>
+    <div className="text-sm">
+      <SyntaxHighlighter style={dracula} language={lang}>
+        {String(children).replace(/\n$/, "")}
+      </SyntaxHighlighter>
+    </div>
   );
 };
 
