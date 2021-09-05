@@ -2,13 +2,17 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
+
 import { PostMetaData } from "../interfaces/interfaces";
+import { sortByDate } from "../utils/sortByDate";
 
 interface IProps {
   posts: PostMetaData[];
 }
 
 const Home: NextPage<IProps> = ({ posts }) => {
+  posts.sort(sortByDate);
+
   return (
     <div>
       {posts.map((post, i) => (
