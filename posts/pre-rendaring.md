@@ -1,39 +1,18 @@
 ---
-title: "お試し投稿exception"
-date: "2020-01-01"
+title: "About me"
+date: "1999-09-10"
 ---
 
-- これは
-- 連続の
-- `list`です
+Hi, I'm **Onoyama Shodai(o-xian)**!  
+I'm a student of Kyushu Institute of Technology.
 
-これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。これは連続の**文章**です。
+# Links
 
-> ahiahi  
-> hogehoge
+- [GitHub](https://github.com/oshanQQ)
+- [Zenn](https://zenn.dev/oshanqq)
+- [SpeakerDeck](https://speakerdeck.com/oshanqq)
 
-これは[Next.js と Markdown でブログを作るときのメモ](https://zenn.dev/oshanqq/scraps/786663de30d1ab)です。
+# Language
 
-```tsx
-import { CodeComponent } from "react-markdown/src/ast-to-react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
-
-const CodeBlock: CodeComponent = ({ node, inline, className, children }) => {
-  if (inline) {
-    return <code className={className}>{children}</code>;
-  }
-
-  const match = /language-(\w+)/.exec(className || "");
-  const lang = match && match[1] ? match[1] : "";
-  return (
-    <SyntaxHighlighter style={dracula} language={lang}>
-      {String(children).replace(/\n$/, "")}
-    </SyntaxHighlighter>
-  );
-};
-
-export default CodeBlock;
-```
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+- JavaScript / TypeScript
+- Rust
