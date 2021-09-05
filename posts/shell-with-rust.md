@@ -9,7 +9,7 @@ date: "2021-09-02"
 
 # シェル概要
 
-今回実装するシェルは**coconush🥥**と名付けました。錆(Rust)は基本的に茶色い見た目をしています。そんな Rust で、カーネルを守る貝殻(シェル)を実装するので、同じく「茶色の見た目で、何かを覆うもの」としてココナッツから名前を取りました ~~Nushell 被り~~ 。GitHub のリポジトリと Zenn のスクラップを載せておきます。
+今回実装するシェルは`coconush🥥`と名付けました。錆(Rust)は基本的に茶色い見た目をしています。そんな Rust で、カーネルを守る貝殻(シェル)を実装するので、同じく「茶色の見た目で、何かを覆うもの」としてココナッツから名前を取りました ~~Nushell 被り~~ 。GitHub のリポジトリと Zenn のスクラップを載せておきます。
 
 [oshanQQ/coconush: 🥥 A toy shell implemented in Rust](https://github.com/oshanQQ/coconush)
 
