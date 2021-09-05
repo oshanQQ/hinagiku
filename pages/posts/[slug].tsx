@@ -12,9 +12,10 @@ interface IProps {
 const Post: NextPage<IProps> = ({ post }) => {
   return (
     <>
-      <div className="mb-6 text-2xl font-bold text-center">
+      <div className="mb-4 text-2xl font-bold text-center">
         {post.meta.title}
       </div>
+      <div className="mb-6 text-center">{post.meta.date}</div>
       <Markdown content={post.content} />
     </>
   );

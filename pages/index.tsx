@@ -19,7 +19,7 @@ const Home: NextPage<IProps> = ({ posts }) => {
         <div key={i} className="py-4 pl-4 cursor-pointer">
           <Link href={`/posts/${post.slug}`} passHref>
             <div>
-              <div className="mb-2 text-2xl">{post.title}</div>
+              <div className="mb-2 text-2xl font-bold">{post.title}</div>
               <div className="ml-4 text-lg">{post.date}</div>
             </div>
           </Link>
