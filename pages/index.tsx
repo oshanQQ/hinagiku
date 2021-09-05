@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import { PostMetaData } from "../interfaces/interfaces";
@@ -11,7 +12,11 @@ const Home: NextPage<IProps> = ({ posts }) => {
   return (
     <div>
       {posts.map((post, i) => (
-        <div key={i}>{post.title}</div>
+        <div key={i}>
+          <Link href={`/posts/${post.slug}`} passHref>
+            <div>{post.title}</div>
+          </Link>
+        </div>
       ))}
     </div>
   );
