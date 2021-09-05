@@ -5,7 +5,7 @@ const Header: NextComponentType = () => {
   return (
     <>
       <div className="pb-12 text-4xl font-bold">
-        <Link href="/">o-xian.dev</Link>
+        <Link href="/">hinagiku</Link>
       </div>
     </>
   );
