@@ -16,7 +16,7 @@ const Home: NextPage<IProps> = ({ posts }) => {
   return (
     <div>
       {posts.map((post, i) => (
-        <div key={i} className="py-4 pl-4 border-b-2 cursor-pointer">
+        <div key={i} className="py-4 pl-4 cursor-pointer">
           <Link href={`/posts/${post.slug}`} passHref>
             <div>
               <div className="mb-2 text-2xl">{post.title}</div>
