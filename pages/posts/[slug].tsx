@@ -11,6 +11,7 @@ const Post: NextPage<IProps> = ({ post }) => {
   return (
     <>
       <div>{post.meta.title}</div>
+      <Markdown content={post.content} />
     </>
   );
 };
