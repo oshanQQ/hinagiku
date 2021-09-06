@@ -1,6 +1,6 @@
-import { personalDataType } from "../interfaces/interfaces";
+import { PersonalDataType } from "../interfaces/interfaces";
 
-export const myData: personalDataType = {
+export const myData: PersonalDataType = {
   name: "o-xian",
   sitename: "hinagiku",
   twitter: {

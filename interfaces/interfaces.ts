@@ -9,7 +9,7 @@ interface PostInfo {
   content: string;
 }
 
-interface personalDataType {
+interface PersonalDataType {
   name: string;
   sitename: string;
   twitter: {
@@ -22,4 +22,4 @@ interface personalDataType {
   };
 }
 
-export type { PostMetaData, PostInfo, personalDataType };
+export type { PostMetaData, PostInfo, PersonalDataType };
