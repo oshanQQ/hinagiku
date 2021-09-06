@@ -33,10 +33,13 @@ class MyDocument extends Document {
             name="msapplication-square310x310logo"
             content="/site-tile-310x310.png"
           />
-          <meta name="msapplication-TileColor" content="#fff" />
+          <meta name="msapplication-TileColor" content="#059669" />
           {/* safari */}
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="#059669"
+          />
           <meta name="apple-mobile-web-app-title" content="hinagiku" />
           <link
             rel="apple-touch-icon"
@@ -45,7 +48,7 @@ class MyDocument extends Document {
           />
           {/* general */}
           <meta name="application-name" content="hinagiku" />
-          <meta name="theme-color" content="#fff" />
+          <meta name="theme-color" content="#059669" />
           <meta name="description" content="o-xian blog" />
           <link rel="icon" sizes="192x192" href="/icon-192x192.png" />
           <link rel="icon" href="/favicon.ico" />
