@@ -18,13 +18,13 @@
 /* Headers */
 .markdown h1,
 .markdown h2 {
-  @apply text-xl my-3 font-bold;
+  @apply text-2xl my-3 pb-2 font-bold border-b-2 border-gray-200;
 }
 .markdown h3,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  @apply text-lg my-3 font-semibold;
+  @apply text-lg mt-6 font-semibold;
 }
 @screen sm {
   .markdown h1,
