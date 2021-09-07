@@ -22,6 +22,20 @@ const Post: NextPage<IProps> = ({ post }) => {
   );
 };
 
+export async function getStaticPaths() {
+  const files = fs.readdirSync("posts");
+  const paths = files.map((file) => ({
+    params: {
+      slug: file.split(".")[0],
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
 export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params;
 
@@ -41,20 +55,6 @@ export async function getStaticProps({ ...ctx }) {
     props: {
       post: post,
     },
-  };
-}
-
-export async function getStaticPaths() {
-  const files = fs.readdirSync("posts");
-  const paths = files.map((file) => ({
-    params: {
-      slug: file.split(".")[0],
-    },
-  }));
-
-  return {
-    paths,
-    fallback: false,
   };
 }
 
