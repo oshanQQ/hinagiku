@@ -28,7 +28,7 @@ const Meta: React.FC<Props> = (props) => {
             : "https://images.ctfassets.net/6ncgqkwh9qvt/6nvWJT1AkM64so8Auue4QQ/e22a236a03eb69a86b9696a4d9b6886d/EngineeringHistory.png"
         }
       />
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />

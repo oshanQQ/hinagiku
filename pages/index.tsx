@@ -17,7 +17,11 @@ const Home: NextPage<IProps> = ({ posts }) => {
 
   return (
     <div>
-      <Meta type="website" description="o-xian blog" />
+      <Meta
+        type="website"
+        description="o-xian blog"
+        image="https://hinagiku.vercel.app/ogp.jpg"
+      />
       {posts.map((post, i) => (
         <div key={i} className="py-4 pl-4 cursor-pointer">
           <Link href={`/posts/${post.slug}`} passHref>

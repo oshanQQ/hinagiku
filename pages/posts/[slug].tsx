@@ -14,7 +14,12 @@ interface IProps {
 const Post: NextPage<IProps> = ({ post }) => {
   return (
     <>
-      <Meta title={post.meta.title} type="artcle" slug={post.meta.slug} />
+      <Meta
+        title={post.meta.title}
+        type="artcle"
+        slug={post.meta.slug}
+        image="https://hinagiku.vercel.app/ogp.jpg"
+      />
       <div className="mb-4 text-2xl font-bold text-center">
         {post.meta.title}
       </div>
