@@ -36,8 +36,16 @@ const Home: NextPage<IProps> = ({ posts }) => {
   );
 };
 
+function isMarkdown(filename: String): Boolean {
+  if (filename.split('.').pop() == "md") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 export async function getStaticProps() {
-  const files = fs.readdirSync("posts");
+  const files = fs.readdirSync("posts").filter(filename => isMarkdown(filename));
 
   let posts = files.map((file) => {
     const data = fs.readFileSync(`posts/${file}`).toString();
