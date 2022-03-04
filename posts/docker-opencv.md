@@ -68,13 +68,13 @@ plt.imshow(img)
 画像もしっかり表示されていますね 🎉  
 ※色味がおかしいのは後述
 
-![](docker-opencv2.png)
+![](/blog/docker-opencv/docker-opencv2.png)
 
 # 画像の色味がおかしい
 
 うまく画像を表示している感を出しましたが、この画像は元の画像より青っぽく表示されています。元の画像がこちら。
 
-![](docker-opencv3.png)
+![](/blog/docker-opencv/docker-opencv3.png)
 
 これは OpenCV の使用によるものです。詳しい解説は[こちらの記事](https://tellusxdp.github.io/start-python-with-tellus/lesson8.html)から拝借しました。
 
@@ -117,7 +117,7 @@ cv2.imwrite("lena_canny.png", img_canny)
 
 ちゃんと境界画像も生成できています！これで学習データを作れる～ 🎉🎉
 
-![](docker-opencv4.png)
+![](/blog/docker-opencv/docker-opencv4.png)
 
 # 参考
 
