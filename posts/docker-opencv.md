@@ -122,7 +122,7 @@ cv2.imwrite("lena_canny.png", img_canny)
 
 ### ImportError 関係
 
-- [Image Layer Details - continuumio/anaconda3:2021.05 - sha256:41a31481637e1774c798e028cf885b0411d091043b03762f35f62e147c33b3f8 | Docker Hub](https://hub.docker.com/layers/continuumio/anaconda3/2021.05/images/sha256-41a31481637e1774c798e028cf885b0411d091043b03762f35f62e147c33b3f8?context=explore)
+- [Image Layer Details - continuumio/anaconda3:2021.05 | Docker Hub](https://hub.docker.com/layers/continuumio/anaconda3/2021.05/images/sha256-41a31481637e1774c798e028cf885b0411d091043b03762f35f62e147c33b3f8?context=explore)
 - [OpenCV を Python で動かそうとして libGL.so が無いって言われたけど解決した。 - Qiita](https://qiita.com/toshitanian/items/5da24c0c0bd473d514c8)
 - [8.2. Debian に慣れる](https://www.debian.org/releases/stable/amd64/ch08s02.ja.html#idm2975)
 - [Docker: E: Unable to locate package - Tech Tips](https://sumito.jp/2018/07/30/e-unable-to-locate-package/)
