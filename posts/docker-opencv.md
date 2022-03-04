@@ -5,15 +5,14 @@ date: "2021-12-15"
 
 # はじめに
 
-現在研究室で扱っている機械学習の環境は、Python(JupyterLab) + Docker(Docker Compose)で立てています。その研究を行う中で、学習データとして「通常の画像」と「輪郭のみの画像」の画像セットを用意することになりました。そこで画像処理に Opne CV を使おうとしたのですが、いろいろハマったので記録していきます。
-
-※OpenCV の操作方法を詳しく説明することはしません。そこは自分でググって～。
+現在、私は Python(JupyterLab) + Docker(Docker Compose)で機械学習の環境を構築しています。  
+この環境のもとで、訓練データとして「通常の画像」と「輪郭画像」の画像セットを用意することになりました。そのために Open CV を使ったのですが、いろいろとハマる部分が多かったので記録しておきます。
 
 # ImportError: libGL.so.1: cannot open shared object file
 
 Python 版 OpenCV(`opencv-contrib-python`)を入れたはいいものの、`ImportError: libGL.so.1: cannot open shared object fil e: No such file or directory`でエラーを吐きました。ベースイメージの OS(linux/amd64)に`libGL.so`がない、と言われています。したがって、コンテナの中でコマンドを叩いてインストールします。
 
-まず、OS 自体をアップデートします(私はこれを忘れていてしばらくハマりました...ちゃんと`update`しようね...)。
+まず、OS 自体をアップデートします。
 
 ```bash
 apt update
@@ -27,7 +26,7 @@ apt install -y libgl1-mesa-dev
 
 以上の操作で、`ImportError`は解決しました 🎉
 
-# JpyterLab だと imshow()が使えない
+# JpyterLab だと `imshow()`が使えない
 
 以下のコードで、Jupyter Notebook から画像を表示させようとしました。
 
@@ -44,7 +43,7 @@ cv2.destroyAllWindows()
 
 しかし、このファイルの実行時に以下のメッセージが出力されてうまく動きませんでした。
 
-![](docker-opencv1.png)
+![](/blog/docker-opencv/docker-opencv1.png)
 
 [こちらの記事](https://stackoverflow.com/questions/58100252/jupyter-kernel-crashes-when-trying-to-display-image-with-opencv)を見てみると、どうも **Open CV の`imshow()`が Jpyter Notebook のセッションを殺す** らしいです。同様の問題を抱えている方もいらっしゃいました。
 
@@ -68,19 +67,19 @@ plt.imshow(img)
 画像もしっかり表示されていますね 🎉  
 ※色味がおかしいのは後述
 
-![](docker-opencv2.png)
+![](/blog/docker-opencv/docker-opencv2.png)
 
 # 画像の色味がおかしい
 
-うまく画像を表示している感を出しましたが、この画像は元の画像より青っぽく表示されています。元の画像がこちら。
+この画像は元の画像より青っぽく表示されています。元の画像がこちら。
 
-![](docker-opencv3.png)
+![](/blog/docker-opencv/docker-opencv3.png)
 
-これは OpenCV の使用によるものです。詳しい解説は[こちらの記事](https://tellusxdp.github.io/start-python-with-tellus/lesson8.html)から拝借しました。
+これは OpenCV の仕様によるものです。詳しい解説は[こちらの記事](https://tellusxdp.github.io/start-python-with-tellus/lesson8.html)から拝借しました。
 
 > OpenCV で`imread`を使って読み込む場合、既定では、画像を「BGR」（青・緑・赤）の順の配列として読み込みます。対して、表示するための`matplotlib.imshow()`では、画像が「RGB」（赤・緑・青）の順の配列として構成されていることを前提としています。そのため、このまま表示すると、青と赤が入れ替わってしまうため、先に表示したように色がおかしくなってしまうのです。
 
-例に漏れず、こちらの画像も青と赤が反転しています。したがって、表示する前に`cvtColor()`で「BGR」から「RGB」に変換します。
+こちらの画像も青と赤が反転しています。したがって、表示する前に`cvtColor()`で「BGR」から「RGB」に変換します。
 
 ```py
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -117,7 +116,7 @@ cv2.imwrite("lena_canny.png", img_canny)
 
 ちゃんと境界画像も生成できています！これで学習データを作れる～ 🎉🎉
 
-![](docker-opencv4.png)
+![](/blog/docker-opencv/docker-opencv4.png)
 
 # 参考
 
